@@ -1,8 +1,8 @@
 import express from "express";
-import { LoginEtu,RegisterEtu} from "../controllers/Etudiants.js";
+import { Login,Register} from "../controllers/Etudiants.js";
 
 
 const router = express.Router();
-router.post('/LoginEtu', LoginEtu);
-router.post('/RegisterEtu', RegisterEtu);
+router.post('/Login', Login);
+router.post('/Register', Register);
 export default router;

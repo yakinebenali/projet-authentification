@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 
-export const RegisterEtu  = async(req, res) => {
+export const Register  = async(req, res) => {
     const {  name,email,password} = req.body;
     const salt = await bcrypt.genSalt();
     const hashPassword = await bcrypt.hash(password, salt);
@@ -25,7 +25,7 @@ export const RegisterEtu  = async(req, res) => {
 
 
 
-export const LoginEtu = async(req, res) => {
+export const Login = async(req, res) => {
    
     try {
         const etudiant = await etudiants.findAll({
