@@ -1,14 +1,31 @@
 {
-  "name": "server.js",
+  "name": "portal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "description": "Authentification unique using jwt",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "yakine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thamerh/Authentificatin-unique-fullstackjs.git"
+  },
+  "author": "thamer hamdi",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thamerh/Add-Edit-Delete-Products-FullStackProject/issues"
+  },
+  "homepage": "https://github.com/thamerh/Add-Edit-Delete-Products-FullStackProject#readme",
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.21.4"
   }
 }
