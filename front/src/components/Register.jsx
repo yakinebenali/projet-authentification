@@ -1,14 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
-import './Singup.css';
+import './Register.css';
 
 
-const Signup = () => {
+const Register= () => {
 	const [name,setFirstName] = useState('');
 	const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [msg, setMsg] = useState('');
-	const Register= async (e) => {
+	const Registerr= async (e) => {
         e.preventDefault();
         try {
             await axios.post('http://localhost:3000/Register', {
@@ -73,4 +73,4 @@ const Signup = () => {
 	);
 };
 
-export default Signup;
+export default Register;

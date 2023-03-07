@@ -4,6 +4,7 @@ import axios from "axios";
 import "./login.css";
 
 
+
 const Login = () => {
 	const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -37,7 +38,7 @@ const Login = () => {
 		<div className="login_container">
 			<div className="login_form_container">
 				<div className="right">
-					<form  onSubmit={Auth}  className="form_container" >
+					<form  onSubmit={Login}  className="form_container" >
 						<h1 id="a">Login</h1>
 						<input
 							type="email"
